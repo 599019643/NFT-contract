@@ -21,7 +21,7 @@ public class ContractCompileTest {
         SolidityCompileExtensions extensions = new SolidityCompileExtensions();
         extensions.setPkg("com.ac.yb.contracts");
         /**设置要编译的合约名*/
-        extensions.setSelector("NoLimitToken.sol");
+        extensions.setSelector("LimitToken.sol");
 
         CompileHandler compileHandler = new CompileHandler(projectDir, extensions);
         compileHandler.doSolc();

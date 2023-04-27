@@ -26,7 +26,11 @@ public enum NftErrorCode {
 
     NOT_OWNER("003007", "NFT所属不是本人"),
 
-    IS_OWNER("003008", "不能授权给本人");
+    IS_OWNER("003008", "不能授权给本人"),
+
+    HAS_EXCEED("003009", "nft发行数量超过限制"),
+
+    LOW_OVERFLOW("003010", "nft发行数量设置过低");
 
     public String code;
     public String message;

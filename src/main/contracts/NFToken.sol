@@ -26,6 +26,8 @@ SupportsInterface
     string constant NFT_ALREADY_EXISTS = "003006";
     string constant NOT_OWNER = "003007";
     string constant IS_OWNER = "003008";
+    string constant HAS_EXCEED = "003009";
+    string constant LOW_OVERFLOW = "003010";
 
     /**
      * @dev A descriptive name for a collection of NFTs.
