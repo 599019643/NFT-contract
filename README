@@ -1,0 +1,26 @@
+智能合约编译工具：
+
+AddressUtils.sol  :  地址工具类，判断是否为智能合约
+
+Counters.sol :       计数器工具类，可以实现计数功能，用于生成NFT的tokenId
+
+ERC721.sol   ：       ERC-271协议标准合约
+
+ERC721TokenReceiver.sol :  ERC-271扩展合约
+
+NFToken      ：       ERC-271协议标准合约 NFT实现合约
+
+NoLimitToken ：       不限制NFT发行个数的NFT合约
+
+
+编译合约使用下述测试类：
+
+com.ac.yb.contract.ContractCompileTest
+
+通过配置SolidityCompileExtensions类的属性进行配置：
+
+pkg                                 生成java文件包名
+output = "src/main"                 生成文件根目录
+onlyAbiBin = false                  是否只生成abi和bin,true代表不生成java文件
+contracts = "src/main/contracts"    合约文件目录
+String selector                     要编译的合约文件（全部编译时不用填写）
